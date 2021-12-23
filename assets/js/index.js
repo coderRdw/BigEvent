@@ -32,7 +32,8 @@ function getUserInfo() {
 }
 function renderAvatar(user) {
   // 1.获取用户名称
-  // 优先级：如果有nickname，则使用nickname
+  // 优先级：nickname>username;
+  // 如果有nickname，则使用nickname
   // 没有，使用username
   let name = user.nickname || user.username
   // 2.修改欢迎的文本
